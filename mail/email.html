@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" />
+
+  <style>
+    :root {
+      --green: #4CAF50;
+      --dark-green: #2e7d32;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      color: var(--dark-green);
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.9);
+      padding: 40px 30px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8px);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .icon {
+      font-size: 4rem;
+      color: var(--green);
+      margin-bottom: 20px;
+      animation: bounceIn 1.2s ease-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      animation: slideInDown 1s ease-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #444;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: var(--green);
+      color: var(--white);
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      animation: bounceIn 1.5s ease-out;
+    }
+
+    .button i {
+      margin-right: 8px;
+    }
+
+    .button:hover {
+      background-color: var(--dark-green);
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.9); opacity: 0; }
+      50% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px 20px;
+      }
+      h1 { font-size: 2rem; }
+      .icon { font-size: 3rem; }
+      .button { font-size: 0.95rem; padding: 10px 20px; }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.75rem; }
+      p { font-size: 1rem; }
+      .icon { font-size: 2.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="stickCanvas"></canvas>
+
+  <div class="container">
+    <i class="far fa-check-circle icon"></i>
+    <h1>Thank You!</h1>
+    <p>Your message has been sent successfully. I’ll get back to you as soon as possible.</p>
+    <a href="index.html" class="button"><i class="fas fa-home"></i>Back to Home</a>
+  </div>
+
+  <!-- Stick animation script -->
+  <script>
+    const canvas = document.getElementById('stickCanvas');
+    const ctx = canvas.getContext('2d');
+    let width, height;
+    let lines = [];
+    const defaultLineCount = 60;
+  
+    function resizeCanvas() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    }
+  
+    function createLine(x, y) {
+      lines.push({
+        x: x,
+        y: y,
+        length: Math.random() * 100 + 20,
+        angle: Math.random() * Math.PI * 2,
+        speed: Math.random() * 0.8 + 0.4,
+      });
+    }
+  
+    function initLines(count) {
+      lines = [];
+      for (let i = 0; i < count; i++) {
+        createLine(Math.random() * width, Math.random() * height);
+      }
+    }
+  
+    function drawLines() {
+      ctx.clearRect(0, 0, width, height);
+      ctx.strokeStyle = 'rgba(76, 175, 80, 0.3)';
+      ctx.lineWidth = 1;
+  
+      lines.forEach(line => {
+        const dx = Math.cos(line.angle) * line.length;
+        const dy = Math.sin(line.angle) * line.length;
+  
+        ctx.beginPath();
+        ctx.moveTo(line.x, line.y);
+        ctx.lineTo(line.x + dx, line.y + dy);
+        ctx.stroke();
+  
+        line.x += Math.cos(line.angle) * line.speed;
+        line.y += Math.sin(line.angle) * line.speed;
+  
+        // wrap around
+        if (line.x < -100 || line.x > width + 100 || line.y < -100 || line.y > height + 100) {
+          line.x = Math.random() * width;
+          line.y = Math.random() * height;
+        }
+      });
+    }
+  
+    function animate() {
+      drawLines();
+      requestAnimationFrame(animate);
+    }
+    function getRandomInt(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    function handleInteraction(e) {
+      const touch = e.touches ? e.touches[0] : e;
+      const x = touch.clientX;
+      const y = touch.clientY;
+      let randomNum = getRandomInt(5, 25);
+      // Add a new stick at touch/click location
+      //   createLine(x, y);
+  
+      // Optional: add multiple sticks at once
+      for (let i = 0; i < randomNum; i++) createLine(x, y);
+    }
+  
+    function handleMouseMove(e) {
+      const x = e.clientX || (e.touches && e.touches[0]?.clientX);
+      const y = e.clientY || (e.touches && e.touches[0]?.clientY);
+      canvas.style.transform = `translate(${(x - width/2) * 0.01}px, ${(y - height/2) * 0.01}px)`;
+    }
+  
+    // Init
+    window.addEventListener('resize', () => {
+      resizeCanvas();
+      initLines(defaultLineCount);
+    });
+  
+    document.addEventListener('click', handleInteraction);
+    document.addEventListener('touchstart', handleInteraction);
+    document.addEventListener('mousemove', handleMouseMove);
+    document.addEventListener('touchmove', handleMouseMove);
+  
+    resizeCanvas();
+    initLines(defaultLineCount);
+    animate();
+  </script>
+  
+
+</body>
+</html>
