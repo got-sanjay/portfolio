@@ -2,7 +2,7 @@
 
 Welcome to my personal portfolio repository. This site serves as a digital space to present my technical skills, professional journey, and freelance services in **data science**, **data analysis**, and **software development**.
 
-![Portfolio Screenshot](img/visual.png)
+![Portfolio Screenshot](img/desktopView.png)
 
 ---
 
@@ -20,9 +20,7 @@ This portfolio highlights:
 
 ## 🌍 Live Preview
 
-🖥️ **View Live:** [https://yourusername.github.io/portfolio](https://yourusername.github.io/portfolio)
-
-> Replace `yourusername` with your actual GitHub username or custom domain.
+🖥️ **View Live:** [https://yourusername.github.io/portfolio](https://got-sanjay.github.io/portfolio)
 
 ---
 
@@ -50,11 +48,11 @@ This portfolio highlights:
 
 ### 💻 Desktop View
 
-![Desktop View](img/visual.png)
+![Desktop View](img/desktopView.png)
 
 ### 📱 Mobile View
 
-![Mobile View](img/Survey_data_3.png)
+![Mobile View](img/mobileView.png)
 
 ---
 
