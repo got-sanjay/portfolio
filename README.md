@@ -20,7 +20,7 @@ This portfolio highlights:
 
 ## 🌍 Live Preview
 
-🖥️ **View Live:** [https://yourusername.github.io/portfolio](https://got-sanjay.github.io/portfolio)
+🖥️ **View Live:** [https://got-sanjay.github.io/portfolio](https://got-sanjay.github.io/portfolio)
 
 ---
 
