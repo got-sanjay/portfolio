@@ -46,9 +46,9 @@ This portfolio highlights:
 
 ## 📷 Portfolio Snapshots
 
-### 💻 Desktop View
+<!-- ### 💻 Desktop View
 
-![Desktop View](img/desktopView.png)
+![Desktop View](img/desktopView.png) -->
 
 ### 📱 Mobile View
 
