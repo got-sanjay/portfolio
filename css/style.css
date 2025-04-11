@@ -230,7 +230,7 @@ pre {
   margin-top: 0;
   margin-bottom: 1rem;
   overflow: auto;
-  -ms-overflow-style: scrollbar;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
 figure {
@@ -6555,6 +6555,7 @@ button.bg-dark:focus {
 
 .border-primary {
   border-color: #0BCEAF !important;
+  z-index: 0;
 }
 
 .border-secondary {
@@ -6673,6 +6674,15 @@ button.bg-dark:focus {
 
 .d-inline-flex {
   display: inline-flex !important;
+}
+
+@media (min-width : 380px ){
+  .d-s-block{
+    display: block !important;
+  }
+  .d-s-flex {
+    display: flex !important;
+  }
 }
 
 @media (min-width: 576px) {
