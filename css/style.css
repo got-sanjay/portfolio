@@ -6676,13 +6676,20 @@ button.bg-dark:focus {
   display: inline-flex !important;
 }
 
-@media (min-width : 380px ){
+@media (min-width : 382px ){
   .d-s-block{
     display: block !important;
   }
   .d-s-flex {
     display: flex !important;
   }
+  .d-s-none {
+    display: none !important;
+  }
+  .d-s-inline {
+    display: inline !important;
+  }
+
 }
 
 @media (min-width: 576px) {
