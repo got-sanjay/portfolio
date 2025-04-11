@@ -1,0 +1,116 @@
+
+    :root {
+      --green: #4CAF50;
+      --dark-green: #2e7d32;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      overflow: hidden;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--white);
+      color: var(--dark-green);
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+      margin: auto;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.071);
+      padding: 40px 30px;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(2px);
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    .icon {
+      font-size: 4rem;
+      color: var(--green);
+      margin-bottom: 20px;
+      animation: bounceIn 1.2s ease-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      animation: slideInDown 1s ease-out;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+      color: #444;
+      animation: fadeIn 1.5s ease-in;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: var(--green);
+      color: var(--white);
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      animation: bounceIn 1.5s ease-out;
+    }
+
+    .button i {
+      margin-right: 8px;
+    }
+
+    .button:hover {
+      background-color: var(--dark-green);
+      transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideInDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: scale(0.9); opacity: 0; }
+      50% { transform: scale(1.05); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 30px 20px;
+      }
+      h1 { font-size: 2rem; }
+      .icon { font-size: 3rem; }
+      .button { font-size: 0.95rem; padding: 10px 20px; }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.75rem; }
+      p { font-size: 1rem; }
+      .icon { font-size: 2.5rem; }
+    }
+  
