@@ -5616,6 +5616,9 @@ a.badge-dark:focus, a.badge-dark.focus {
   .close {
     font-size: calc(1.275rem + 0.3vw) ;
   }
+  .education-text{
+    font-size: 1.2rem;
+  }
 }
 
 .close:hover {
