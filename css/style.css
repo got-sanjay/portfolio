@@ -84,7 +84,7 @@ body.modal-open {
   position: relative;            /* So absolute elements inside behave properly */
   overflow: visible !important; /* Prevent clipping of animated ring */
   padding-top: 1.5rem;
-  padding-bottom: 3rem;         /* Give space for animation below the button */
+  padding-bottom: 1.5rem;         /* Give space for animation below the button */
 }
 
 html {
@@ -498,7 +498,7 @@ h6, .h6 {
 
 @media (max-width: 1200px) {
   .display-3 {
-    font-size: calc(1.575rem + 3.9vw) ;
+    font-size: calc(1.575rem + 2.0vw) ;
   }
 }
 
@@ -2999,6 +2999,16 @@ fieldset:disabled a.btn {
   font-size: 0.875rem;
   line-height: 1.5;
   border-radius: 0.2rem;
+}
+
+@media (max-width: 575.98px) {
+  .btn-sm{
+    font-size: 0.8rem;
+  }
+  .btn{
+    padding: 5px 12px; !important
+  }
+  
 }
 
 .btn-block {

@@ -52,33 +52,10 @@
         </div>
     </nav>
     <!-- Navbar End -->
-
-
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <!-- 16:9 aspect ratio -->
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Video Modal End -->
-
-
     <!-- Header Start -->
-    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+    <div class="container-fluid bg-primary d-flex align-items-center py-5" id="home" style="min-height: 100vh;">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center pl-4">
                 <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
                     <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/profile.jpg" alt="">
                 </div>
@@ -88,16 +65,17 @@
                         Sanjay Kumar</h1>
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">Data Analysts, Data Scientist, Data Engineer </div>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="img/Doc/sanjay Machine Learning Resume.pdf" class="btn btn-outline-light mr-5 m-0 ml-5"
-                            download="Sanjay_Kumar_resume.pdf">Download CV</a>
-                        <div
-                            class="d-flex d-s-block align-items-center justify-content-center justify-content-lg-start pt-5 ">
-                            <button type="button" class="btn-play d-none d-s-block" data-toggle="modal" data-src=""
-                                data-target="#videoModal"><span></span>
-                            </button>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-4">
+                        <div class="my-2">
+                            <a class="btn btn-light btn-social mr-2" href="https://www.linkedin.com/in/gotsanjay"
+                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-light btn-social mr-2" href="https://www.instagram.com/got__sanjay"
+                                target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a class="btn btn-light btn-social" href="https://github.com/got-sanjay" target="_blank"><i
+                                    class="fab fa-github"></i></a>
                         </div>
-                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Play Video</h5>
+                        <a href="img/Doc/sanjay Machine Learning Resume.pdf" class="btn btn-outline-light mr-5 m-0 ml-5 my-2"
+                            download="Sanjay_Kumar_resume.pdf">Download CV</a>
                     </div>
                 </div>
             </div>
@@ -107,7 +85,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5" id="about">
+    <div class="container-fluid" id="about">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Project</h1>
@@ -116,49 +94,32 @@
             <div class="row align-items-center">
                 <h3 class="mb-4 align-items-center">Skin Doctor</h3>
                 <div class="col-lg-12 pb-12 pb-lg-0">
-                        <img class="img-fluid w-100 mb-3" src="img/demo_screenshot.png" alt="img for project" >
+                    <img class="img-fluid w-100 mb-3" src="img/demo_screenshot.png" alt="img for project" style="border-radius: 2%;">
                 </div>
                 <div class="col-lg-12">
                     <h3 class="mb-4">About this project</h3>
                     <p>
-
-                        This is the HR employee's dataset collected from codebasics.<br>
-
-                        1. Overall Presence Insights:
-                        Presence Percentage: 92% of the employees are present on average.
-                        Work From Home (WFH) Percentage: 10% of the employees are working from home.
-                        Sick Leave (SL) Percentage: 1.10% of the employees are on sick leave.<br>
-
-                        2. Employee Presence Breakdown:
-                        Top Performers: Some employees like Alexander Davenport have a 100% presence and 0% in WFH and
-                        SL.
-                        Variations: Employees like Ana Little have a lower presence (76%) and higher SL percentage
-                        (1.82%).<br>
-
-                        3. Trends by Date:
-                        Presence Percentage by Date: There are fluctuations in presence percentage over time, with some
-                        notable dips around May 2022 (down to 78%) and peaks at 97%.
-                        WFH Percentage by Date: The WFH percentage also shows variability, peaking at 23% around May
-                        2022.
-                        SL Percentage by Date: The sick leave percentage increases notably towards the end, reaching a
-                        peak of 5.3%.<br>
-
-                        4. Trends by Day of the Week:
-                        Presence by Day: The presence percentage is slightly lower on Thursdays (91%) and Fridays (90%)
-                        compared to other days.
-                        WFH by Day: Fridays have the highest WFH percentage (26.11%).
-                        SL by Day: Sick leave tends to peak on Fridays (2.22%).<br>
-
-                        5. Employee Presence Details:
-                        - This section shows a detailed breakdown of each employee’s presence, WFH, and SL for specific
-                        dates in April 2022.<br>
-
-                        Overall, the dashboard provides a clear overview of employee attendance, work-from-home trends,
-                        and sick leave, with insights into specific patterns by date and day of the week.</p>
-                    <a href="https://github.com/got-sanjay" target="_blank"
-                        class="btn btn-outline-primary mr-4">github</a>
-                    <a href="https://github.com/got-sanjay/Skin-Doctor" class="btn btn-outline-primary"
-                        target="_blank">Learn More</a>
+                        <b>1. Model Capabilities:</b>
+                        Predicts skin conditions such as acne, eczema, psoriasis, and others with high confidence using
+                        a trained Convolutional Neural Network (CNN). Supports both uploaded and webcam-captured images
+                        for real-time analysis.<br>
+                        <b>2. Diagnosis Insights:</b>
+                        Each prediction includes a confidence score to indicate the model’s certainty. Suggestions are
+                        dynamically generated based on model output using OpenAI's GPT engine.<br>
+                        <b>3. Live Deployment Features:</b>
+                        Automatically deletes uploaded images after 20 minutes to ensure user privacy. Supports both
+                        light and dark themes for accessibility and user comfort. <br>
+                        <b>4. User Interaction:</b>
+                        Users can preview, upload, and receive instant AI feedback on the web dashboard. Background
+                        animations enhance visual engagement without affecting performance. <br>
+                        <b>5. Tech Highlights:</b>
+                        Model trained using TensorFlow/Keras on labeled dermatology image data. Flask powers the backend
+                        API, with jQuery/JS handling UI interactions. APScheduler cleans up stored data to prevent
+                        storage bloat.<br><br>
+                        <a href="https://github.com/got-sanjay" target="_blank"
+                            class="btn btn-outline-primary mr-4">github</a>
+                        <a href="https://github.com/got-sanjay/Skin-Doctor" class="btn btn-outline-primary"
+                            target="_blank">Learn More</a>
                 </div>
             </div>
         </div>
@@ -167,7 +128,7 @@
 
 
     <!-- Qualification Start -->
-    <div class="container-fluid py-5" id="qualification">
+    <div class="container-fluid" id="qualification">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Quality</h1>
@@ -176,7 +137,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <h3 class="mb-4">My Education</h3>
-                    <div class="border-left border-primary pt-2 pl-4 ml-2 position-relative">
+                    <div class="border-left border-primary pt-2 pl-4 ml-3 position-relative">
                         <div class="d-flex">
                             <div class="experience-entry">
                                 <div class="position-relative mb-4 ">
@@ -186,13 +147,14 @@
                                     <p class="mb-2"><strong>Thanthai Periyar Govt Arts And Science College </strong> |
                                         <small>Jun 2022 - Apr 2025</small>
                                     </p>
-                                    <p>I have done here a lot of technical things with Data Science, Machine Learning, Deep
+                                    <p>I have done here a lot of technical things with Data Science, Machine Learning,
+                                        Deep
                                         Learning, Artificial Intelligence, and ERP Software. Project -2:
                                         Skin-Doctor Based on Image classification Project-1:
                                         Online-Dataset-Downloader </p>
                                 </div>
                             </div>
-    
+
                             <!-- <div class="position-relative mb-4">
                                 <i class="far fa-dot-circle text-primary position-absolute" style="top: 2px; left: -32px;"></i>
                                 <h5 class="font-weight-bold mb-1">Diploma In Computer Science </h5>
@@ -203,7 +165,8 @@
                                 <div class="position-relative mb-4">
                                     <i class="far fa-dot-circle text-primary position-absolute"
                                         style="top: 2px; left: -32px;z-index: 1;"></i>
-                                    <h5 class="font-weight-bold mb-1">Secondary School Certificate Examination (S.S.C) </h5>
+                                    <h5 class="font-weight-bold mb-1">Secondary School Certificate Examination (S.S.C)
+                                    </h5>
                                     <p class="mb-2"><strong>Soma Sundaram Chettiar Higher Sec School</strong> |
                                         <small>Jun 2021 – Apr 2022</small>
                                     </p>
@@ -221,9 +184,10 @@
                     <div class="border-left border-primary pt-2 pl-4 ml-2 ">
                         <div class="d-flex">
                             <div class="experience-entry">
+                                <i class="far fa-dot-circle text-primary position-absolute"
+                                    style="top: 2px; left: -32px;"></i>
                                 <div class="position-relative mb-4 ">
-                                    <i class="far fa-dot-circle text-primary position-absolute"
-                                        style="top: 2px; left: -32px;"></i>
+
                                     <h5 class="font-weight-bold mb-1">Machine Learning (Intern)</h5>
                                     <p class="mb-2"><strong>GR SoftTech </strong> | <small>2025 Jan - Running</small>
                                     </p>
@@ -252,7 +216,7 @@
 
 
     <!-- Skill Start -->
-    <div class="container-fluid py-5" id="skill">
+    <div class="container-fluid" id="skill">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skills
@@ -274,20 +238,10 @@
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-bold">Python</h6>
-                            <h6 class="font-weight-bold">85%</h6>
+                            <h6 class="font-weight-bold">95%</h6>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="skill mb-4">
-                        <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Excel</h6>
-                            <h6 class="font-weight-bold">90%</h6>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                            <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="95" aria-valuemin="0"
                                 aria-valuemax="100"></div>
                         </div>
                     </div>
@@ -296,10 +250,10 @@
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
                             <h6 class="font-weight-bold">SQL</h6>
-                            <h6 class="font-weight-bold">90%</h6>
+                            <h6 class="font-weight-bold">80%</h6>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                            <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0"
                                 aria-valuemax="100"></div>
                         </div>
                     </div>
@@ -325,11 +279,11 @@
                     </div>
                     <div class="skill mb-4">
                         <div class="d-flex justify-content-between">
-                            <h6 class="font-weight-bold">Scikit-learn</h6>
-                            <h6 class="font-weight-bold">80%</h6>
+                            <h6 class="font-weight-bold">Deployment</h6>
+                            <h6 class="font-weight-bold">70%</h6>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="70" aria-valuemin="0"
                                 aria-valuemax="100"></div>
                         </div>
                     </div>
@@ -341,7 +295,7 @@
 
 
     <!-- Services Start -->
-    <div class="container-fluid pt-5" id="service">
+    <div class="container-fluid" id="service">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Service
@@ -356,26 +310,7 @@
                     </div>
                     <p>Python is a popular programming language used for data analysis, and it has many powerful
                         libraries for this purpose, including NumPy, Pandas, and Matplotlib.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fab fa-microsoft fa-2x service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Data Analysis with PowerBi</h4>
-                    </div>
-                    <p>Power BI is a powerful tool for data analysis and visualization, and it can be used to
-                        analyze data from a wide range of sources, including services data.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center mb-4">
-                        <i class="fa-2x fas fa-file-excel service-icon bg-primary text-white mr-3"></i>
-                        <h4 class="font-weight-bold m-0">Data analysis in excel</h4>
-                    </div>
-                    <p>I provide Data analysis in excel I can help you with various data analysis tasks, such as
-                        cleaning and processing data, creating custom functions, and creating charts and graphs to
-                        visualize the data. </p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">Read More</a>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center mb-4">
@@ -385,7 +320,7 @@
                     <p>Web Scraping is the process of extracting data from websites using automated tools. Python is
                         a popular language for web scraping due to its ease of use and a wide range of available
                         libraries.</p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">Read More</a>
                 </div>
                 <div class="col-lg-4 col-md-6 text-center mb-5">
                     <div class="d-flex align-items-center justify-content-center mb-4">
@@ -396,7 +331,7 @@
                         involves the use of various techniques and algorithms to extract useful information from
                         data, such as association rule mining, clustering, classification, and regression analysis.
                     </p>
-                    <a class="border-bottom border-primary text-decoration-none" href="">Read More</a>
+                    <a class="border-bottom border-primary text-decoration-none" href="#contact">Read More</a>
                 </div>
             </div>
         </div>
@@ -405,7 +340,7 @@
 
 
     <!-- Portfolio Start -->
-    <div class="container-fluid pt-5 pb-3" id="portfolio">
+    <div class="container-fluid" id="portfolio">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Gallery
@@ -417,40 +352,19 @@
                     <ul class="list-inline mb-4" id="portfolio-flters">
                         <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">All</li>
                         <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Python</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Power BI</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">PHP</li>
-                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".Fourth">Excel</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">PHP</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Others</li>
                     </ul>
                 </div>
             </div>
             <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/projectPortrate.png" alt="img for project">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                             <a target="_blank" href="https://github.com/got-sanjay/Online-Library-Management-System">
                                 <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
                                 <!-- <a style="color:#fff,font-size: 20px;"href="">Details</a> -->
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/visual.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a target="_blank" href="">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/DATA-CLEANING-with-SQL.jpg" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a target="_blank" href="">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
                             </a>
                         </div>
                     </div>
@@ -465,37 +379,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/Survey_data_3.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a target="_blank" href="">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/Assignment4.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="" target="_blank">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item Fourth">
-                    <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/Sales-Distribution-Practice project-2.png" alt="">
-                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
-                            <a href="" target="_blank">
-                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item Fourth">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item third">
                     <div class="position-relative overflow-hidden mb-2">
                         <img class="img-fluid rounded w-100" src="img/SQL.png" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
@@ -505,9 +389,29 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 mb-4 portfolio-item Fourth">
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
                     <div class="position-relative overflow-hidden mb-2">
-                        <img class="img-fluid rounded w-100" src="img/financialdashboard.png" alt="">
+                        <img class="img-fluid rounded w-100" src="img/demo_screenshot.png" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="" target="_blank">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/gallery.png" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <a href="" target="_blank">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/visual.png" alt="">
                         <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
                             <a href="" target="_blank">
                                 <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
@@ -519,96 +423,8 @@
         </div>
     </div>
     <!-- Portfolio End -->
-
-
-    <!-- Testimonial Start --><!--
-    <div class="container-fluid py-5" id="testimonial">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Review</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Clients Say</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="owl-carousel testimonial-carousel">
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-1.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-2.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                        <div class="text-center">
-                            <i class="fa fa-3x fa-quote-left text-primary mb-4"></i>
-                            <h4 class="font-weight-light mb-4">Dolor eirmod diam stet kasd sed. Aliqu rebum est eos. Rebum elitr dolore et eos labore, stet justo sed est sed. Diam sed sed dolor stet accusam amet eirmod eos, labore diam clita</h4>
-                            <img class="img-fluid rounded-circle mx-auto mb-3" src="img/testimonial-3.jpg" style="width: 80px; height: 80px;">
-                            <h5 class="font-weight-bold m-0">Client Name</h5>
-                            <span>Profession</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Testimonial End -->
-
-
-    <!-- Blog Start --><!--
-    <div class="container-fluid pt-5" id="blog">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Blog</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Latest Blog</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-1.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-2.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-                <div class="col-lg-4 mb-5">
-                    <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/blog-3.jpg" alt="">
-                        <div class="blog-date">
-                            <h4 class="font-weight-bold mb-n1">01</h4>
-                            <small class="text-white text-uppercase">Jan</small>
-                        </div>
-                    </div>
-                    <h5 class="font-weight-medium mb-4">Rebum lorem no eos ut ipsum diam tempor sed rebum elitr ipsum</h5>
-                    <a class="btn btn-sm btn-outline-primary py-2" href="">Read More</a>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Blog End -->
-
-
     <!-- Contact Start -->
-    <div class="container-fluid py-5" id="contact">
+    <div class="container-fluid" id="contact">
         <div class="container">
             <div class="position-relative d-flex align-items-center justify-content-center">
                 <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact
@@ -666,11 +482,9 @@
         </div>
     </div>
     <!-- Contact End -->
-
-
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
-        <div class="container text-center py-5">
+        <div class="container text-center">
             <div class="d-flex justify-content-center mb-4">
                 <!-- <a class="btn btn-light btn-social mr-2" href=""><i class="fab fa-twitter"></i></a> -->
                 <!-- <a class="btn btn-light btn-social mr-2" href=""><i class="fab fa-facebook-f"></i></a> -->
