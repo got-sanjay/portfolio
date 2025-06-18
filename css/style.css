@@ -59,7 +59,6 @@ img, video, iframe {
 /* Containers should never overflow screen width */
 .container, .row, section, div {
   max-width: 100%;
-  overflow-x: hidden;
   word-wrap: break-word;
 }
 
@@ -72,7 +71,6 @@ body.modal-open {
 /* Make sure the Download CV section doesn't cause overflow */
 .d-flex {
   flex-wrap: wrap;
-  overflow: hidden;
 }
 
 /* Ensure modal and iframe don’t create layout shift */
@@ -5243,7 +5241,7 @@ a.badge-dark:focus, a.badge-dark.focus {
   }
   
   .experience-entry.animate {
-    animation: fadeSlideIn 1.0s ease-in-out forwards;
+    animation:  fadeSlideIn 1.5s cubic-bezier(0.08, 0.88, 1, -1.35) forwards;;
   }
   
 
