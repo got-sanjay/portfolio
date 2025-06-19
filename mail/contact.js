@@ -23,10 +23,7 @@ $(function () {
         }
 
         // Get IST time
-        const now = new Date();
-        const istOffset = 5.5 * 60 * 60 * 1000;
-        const istTime = new Date(now.getTime() + istOffset);
-        const formattedTime = istTime.toLocaleString("en-IN", {
+        const formattedTime = new Date().toLocaleString("en-IN", {
             timeZone: "Asia/Kolkata",
             hour12: true,
             year: "numeric",
