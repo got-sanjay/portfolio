@@ -53,13 +53,12 @@
   
     function drawLines() {
       ctx.clearRect(0, 0, width, height);
-      ctx.strokeStyle = 'rgba(76, 175, 80, 0.3)';
       ctx.lineWidth = 1;
+      ctx.strokeStyle = 'rgba(76, 175, 80, 0.4)';
   
       lines.forEach(line => {
         const dx = Math.cos(line.angle) * line.length;
         const dy = Math.sin(line.angle) * line.length;
-  
         ctx.beginPath();
         ctx.moveTo(line.x, line.y);
         ctx.lineTo(line.x + dx, line.y + dy);
@@ -94,13 +93,7 @@
       // Optional: add multiple sticks at once
       for (let i = 0; i < randomNum; i++) createLine(x, y);
     }
-  
-    function handleMouseMove(e) {
-      const x = e.clientX || (e.touches && e.touches[0]?.clientX);
-      const y = e.clientY || (e.touches && e.touches[0]?.clientY);
-      canvas.style.transform = `translate(${(x - width/2) * 0.01}px, ${(y - height/2) * 0.01}px)`;
-    }
-  
+
     // Init
     window.addEventListener('resize', () => {
       resizeCanvas();
@@ -109,9 +102,7 @@
   
     document.addEventListener('click', handleInteraction);
     document.addEventListener('touchstart', handleInteraction);
-    document.addEventListener('mousemove', handleMouseMove);
-    document.addEventListener('touchmove', handleMouseMove);
-  
+    
     resizeCanvas();
     initLines(defaultLineCount);
     animate();
